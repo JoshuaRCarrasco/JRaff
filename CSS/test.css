@@ -1,14 +1,31 @@
 body{
-	background-color: lightgrey;
+	background-color: #ebe5d7;
 }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+svg {
+		padding: 15px;
+	}
+	
 h1{
-		color: orange;
-		font-size: 90px;
-		text-decoration: underline;
+		color: #d6524c;
+		font-size: 20px;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
 	}
 
 	h2{
 		font-size: 40px;
+		color:pink;
 	}
 
 	#first{
@@ -20,9 +37,59 @@ h1{
 	}
 
 	span{
+		color:blue;
 		font-style: italic;
+	}
+
+	p{
+		color:red;
+	}
+	pre{
+		color:green;
+		padding: 15px;
 	}
 
 	h2 span{
 		text-decoration: line-through;
+	}
+	* {
+		box-sizing: border-box;
+	}
+
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 5px;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	#sizer {
+		width: 25%;
+		height: 25%;
+	}
+
+	div.gallery {
+		margin: 5px;
+		border: 1px solid #ccc;
+		float: left;
+		width: 180px;
+	}
+
+	div.gallery:hover {
+		border: 1px solid #777;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
 	}
